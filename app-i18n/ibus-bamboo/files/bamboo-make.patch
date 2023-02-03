@@ -1,0 +1,13 @@
+diff --color -Naur a/Makefile b/Makefile
+--- a/Makefile	2023-02-03 12:12:47.520655751 +0700
++++ b/Makefile	2023-02-03 12:15:39.855682971 +0700
+@@ -59,7 +59,8 @@
+ 	mkdir -p $(DESTDIR)$(engine_dir)
+ 	mkdir -p $(DESTDIR)$(PREFIX)/lib/ibus-$(engine_name)
+ 	mkdir -p $(DESTDIR)$(ibus_dir)/component/
+-
++	mkdir -p $(DESTDIR)$(PREFIX)/share/applications/
++	
+ 	cp -R -f icons data $(DESTDIR)$(engine_dir)
+ 	cp -f $(engine_gui_name) $(DESTDIR)$(PREFIX)/share/applications/
+ 	cp -f $(ibus_e_name) $(DESTDIR)$(PREFIX)/lib/ibus-${engine_name}/
